@@ -1,0 +1,447 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+.tabla_consultas    {
+    font-size: 11px !important;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+.ui-dropdownchecklist-dropcontainer .ui-widget-content {
+    padding: 10px !important;
+}
+
+.ui-dropdownchecklist-dropcontainer .ui-widget-content .ui-state-default {
+    border: 0 solid #000 !important;
+}
+
+.tabla_edita_sap th.titular {
+    font-size: 16px;
+    padding: 0 8px !important;
+}
+
+#logo {
+    margin-top: 0;
+    margin-left: 9px;
+}
+
+.mano   {cursor: pointer !important;}
+
+#ConfigModalBody    i   {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.page-footer {
+    height: 30px;
+    padding: 6px 6px 0 233px;
+}
+
+.page-footer small {
+    font-size: 10px;
+}
+
+#content {
+    padding: 10px 10px;
+}
+
+.fa.fa-1x {font-size: 17px;}
+
+.pointer,
+.anyo_hover { cursor: pointer; }
+.anyo_hover>i { font-size: 16px; }
+.anyo_hover:hover { color: #990000; }
+
+.table > thead > tr > td,
+.table > thead > tr > th {
+    padding: 0 !important;
+    /*border: 0 !important;*/
+}
+
+.table-no-padding.table > tbody > tr > td,
+.table-no-padding.table > tbody > tr > th,
+.table-no-padding.table > tfoot > tr > td,
+.table-no-padding.table > tfoot > tr > th,
+.table-no-padding.table > thead > tr > td,
+.table-no-padding.table > thead > tr > th {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+/*full width container*/
+.block {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.fullimage {
+    backface-visibility: hidden;
+    height: 100%;
+    min-height: 864px;
+    max-height: none;
+    perspective: 2500px;
+    background: no-repeat fixed center center;
+    opacity: 1.0;
+    -webkit-transition: background-image 2s visible;
+    -moz-transition: background-image 1.5s ease-in;
+    -o-transition: background-image 1.5s linear;
+    -ms-transition: background-image 1.5s linear;
+    transition: background-image 1.5s linear;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.titulo_consultas   {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.jarviswidget > header.no-padding   {height: 0 !important; border-bottom: none;}
+
+#zona_tabla {
+    overflow: auto;
+}
+
+.table-condensed.table > tbody > tr > td,
+.table-condensed.table > tbody > tr > th,
+.table-condensed.table > tfoot > tr > td,
+.table-condensed.table > tfoot > tr > th,
+.table-condensed.table > thead > tr > td,
+.table-condensed.table > thead > tr > th {
+    padding: 3px 6px !important;
+}
+
+.sel_dato.active  td  {
+    background-color: #984a13 !important;
+    color: #FFFFFF !important;
+}
+
+.table-mia  td:last-child   {border-right: 1px solid rgb(221, 221, 221) !important;}
+.table-mia  a               {color: #333333;}
+.table-mia  a:hover         {color: #990000;}
+.table-mia  .op1            {background-color: #627bc3; color: #FFFFFF; font-weight: bold;}
+.table-mia  .op2            {background-color: #f1f6ff; color: #000000;}
+
+.ver_cols_matriz,
+.click_expand {
+    color: #f35300 !important;
+}
+
+.margin-left-3  {margin-left: 3px;}
+.margin-left-5  {margin-left: 5px;}
+.margin-left-10  {margin-left: 10px;}
+.margin-left-20  {margin-left: 20px;}
+
+.margin-top-3  {margin-top: 3px;}
+.margin-top-5  {margin-top: 5px;}
+.margin-top-10  {margin-top: 10px;}
+.margin-top-20  {margin-top: 20px;}
+
+.margin-right-3  {margin-right: 3px;}
+.margin-right-5  {margin-right: 5px;}
+.margin-right-10  {margin-right: 10px;}
+.margin-right-20  {margin-right: 20px;}
+
+.margin-bottom-3  {margin-bottom: 3px;}
+.margin-bottom-5  {margin-bottom: 5px;}
+.margin-bottom-10  {margin-bottom: 10px;}
+.margin-bottom-20  {margin-bottom: 20px;}
+
+/* * * * * * * * * * * * * * * * * * * * TABLE SCROLL * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.table-scroll {
+	position:relative;
+	max-width:600px;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid #000;
+}
+.table-wrap {
+	width:100%;
+	overflow:auto;
+}
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+	padding:5px 10px;
+	border:1px solid #000;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.table-scroll thead, .table-scroll tfoot {
+	background:#f9f9f9;
+}
+.clone {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone th, .clone td {
+	visibility:hidden
+}
+.clone td, .clone th {
+	border-color:transparent
+}
+.clone tbody th {
+	visibility:visible;
+	color:red;
+}
+.clone .fixed-side {
+	border:1px solid #000;
+	background:#eee;
+	visibility:visible;
+}
+.clone thead, .clone tfoot{background:transparent;}
+
+/* * * * * * * * * * * * * * * * * * * * FIN TABLE SCROLL * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.text-balance    { color: #9F0000 !important;}
+
+.global_comandos_tablets    .active {background-color: #990000 !important;}
+
+#lista_fechas   td  {color: #000000; cursor: pointer; white-space: nowrap;}
+#lista_fechas   td.disabled   {color: #AAAAAA !important; font-style: italic; cursor: not-allowed;}
+
+#lista_fechas   .active     {background-color: #ffbc3e !important;}
+
+.tipo_tabla_gis td.linea_f_on {
+    background-color: rgba(0, 221, 153, 0.2) !important;
+}
+.tipo_tabla_gis td.titular_tot  {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.padding-5  {margin: 3px 5px !important; width: 99% !important;}
+.padding-2  {padding: 0 2px !important;}
+
+.tabla_cambio_pass  td  {padding: 6px;}
+
+.table-no-border tr,
+.table-no-border th,
+.table-no-border td {
+    border: 0 solid transparent !important;
+    padding: 2px !important;
+}
+
+.zonas_activas.active  article     {
+    /*border: 1px solid #333;*/
+    min-height: 300px;
+    background-color: rgba(122, 226, 69, 0.5);
+    border: 1px dashed #0AA66E;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+div.titulo_widget {
+    white-space: nowrap !important;
+    width: 40% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 18px;
+    padding: 0 6px;
+    margin-top: 6px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.widget_btn_atras {
+    margin: 0 6px;
+    color: rgb(100, 100, 100)
+}
+
+.widget_btn_adelante {
+    margin: 0 6px;
+}
+
+.widget_btn_atras.inactivo,
+.widget_btn_adelante.inactivo {
+    color: rgba(100, 100, 100, 0.2) !important;
+}
+
+.table-busqueda_avanzada td,
+.table-busqueda_avanzada th {
+    padding: 2px;
+    margin: 2px;
+}
+
+.form-control-ba {
+    display: block;
+    width: 100%;
+    height: 26px;
+    padding: 4px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#destino_dato   option:disabled,
+#destino_dato   select[disabled] {
+    color: #CCC;
+    font-style: italic;
+}
+
+.tipo-chart-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#ConfigmModal {
+    z-index: 5000;
+}
+
+.jarviswidget{
+    margin: 0 0 10px 0;
+}
+
+.article_margin {
+    padding-left: 8px;
+    padding-right: 8px
+}
+/*
+#MC1 .zona_widget:not.tipo_value,
+#MC2 .zona_widget:not.tipo_value,
+#MC3 .zona_widget:not.tipo_value {height: 290px}
+
+#WC1 .zona_widget:not.tipo_value,
+#WC2 .zona_widget:not.tipo_value,
+#WC3 .zona_widget:not.tipo_value {height: 400px}
+*/
+
+.zonas_activas  article    {
+    /*padding: 8px 8px 0 8px;*/
+}
+
+.seleccionadaPantalla {
+    background-color: #ff9933;
+}
+
+.form_filtros   .dropdown-toggle    {
+    height: 30px;
+    padding: 0 6px;
+}
+
+.smart-form .radio,
+.smart-form .checkbox {
+    margin-bottom: 0;
+}
+
+.rotate90 {
+    /*width: 50px !important;
+    min-width: 50px;*/
+    padding-top: 16px;
+    position: absolute;
+    text-align: center;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.td_rotate90 {
+    border: 1px solid #333333;
+    font-size: 11px;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+}
+
+.td_italic {
+    font-style: italic;
+    font-size: 11px;
+    white-space: nowrap !important;
+}
+
+.td_nowrap {
+    white-space: nowrap !important;
+}
+
+/*.rotate90 {
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+    transform: rotate(270deg);
+}*/
+
+.form-group {
+    margin-bottom: 6px !important;
+}
+
+.form-group section {
+    margin-top: 6px;
+}
+
+
+.check_responsive .radio-inline,
+.check_responsive .checkbox-inline {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.check_responsive .radio-inline + .radio-inline,
+.check_responsive .checkbox-inline + .checkbox-inline {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#tabla_botellas tbody > tr.selected,
+#tabla_analizadores tbody > tr.selected {
+    background-color: #b0c8d7 !important;
+}
+
+#form_botellas > section {
+    margin-bottom: 5px;
+}
+
+.form_analizadores section {
+    margin-top: 10px;
+}
+
+.op_mensajes.bold {
+    font-weight: bolder;
+    color: #FF0000;
+}

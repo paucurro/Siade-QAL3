@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/app.min.js" />
+        <item url="file://$PROJECT_DIR$/js/libs/jquery-3.2.1.min.js" />
+        <item url="file://$PROJECT_DIR$/js/plugin/datatables/dataTables.colVis.min.js" />
+        <item url="file://$PROJECT_DIR$/js/plugin/datatables/jquery.dataTables.min.js" />
+        <item url="file://$PROJECT_DIR$/js/plugin/select2/select2.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-angular.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-audio.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-image.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-jquery-ui.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-process.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-ui.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-validate.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-video.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.iframe-transport.min.js" />
+        <item url="file://$PROJECT_DIR$/js/upload_file/jquery.ui.widget.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/app.min.js" />
+      <root url="file://$PROJECT_DIR$/js/highcharts/localization.es.min.js" />
+      <root url="file://$PROJECT_DIR$/js/libs/jquery-3.2.1.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plugin/datatables/dataTables.colVis.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plugin/datatables/jquery.dataTables.min.js" />
+      <root url="file://$PROJECT_DIR$/js/plugin/select2/select2.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-angular.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-audio.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-image.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-jquery-ui.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-process.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-ui.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-validate.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload-video.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.fileupload.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.iframe-transport.min.js" />
+      <root url="file://$PROJECT_DIR$/js/upload_file/jquery.ui.widget.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

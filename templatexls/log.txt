@@ -1,0 +1,161 @@
+11/08/2021 9:31:48 : Abriendo BDD Ptam
+11/08/2021 9:31:50 : Imposible abrir la BDD qal3_db en 127.0.0.1
+11/08/2021 9:31:50 : Abriendo BDD Ptam
+11/08/2021 9:31:52 : Imposible abrir la BDD qal3_db en 127.0.0.1
+11/08/2021 9:31:52 : Error ocurrido: SQL Error: Can't connect to MySQL server on '127.0.0.1' (10061)
+11/08/2021 9:31:56 : Cerrando programa
+11/08/2021 9:31:56 : Error ocurrido: SQL Error: Can't connect to MySQL server on '127.0.0.1' (10061)
+11/08/2021 9:32:00 : Cerrando programa
+11/08/2021 9:32:01 : Cerrando programa
+11/08/2021 9:32:04 : Cerrando programa
+11/08/2021 9:32:07 : Cerrando programa
+11/08/2021 9:32:10 : Cerrando programa
+11/08/2021 9:33:00 : Abriendo BDD Ptam
+11/08/2021 9:33:02 : Abriendo Excel
+11/08/2021 9:34:44 : Abriendo BDD Ptam
+11/08/2021 9:34:46 : Abriendo Excel
+11/08/2021 9:34:49 : Cerrando BDD
+11/08/2021 9:34:49 : ====================================
+11/08/2021 9:34:49 : Done
+11/08/2021 9:34:52 : Cerrando programa
+11/08/2021 9:35:18 : Abriendo BDD Ptam
+11/08/2021 9:35:20 : Abriendo Excel
+11/08/2021 9:37:58 : Abriendo BDD Ptam
+11/08/2021 9:38:00 : Abriendo Excel
+11/08/2021 9:39:29 : Abriendo BDD Ptam
+11/08/2021 9:39:31 : Abriendo Excel
+11/08/2021 9:40:19 : Abriendo BDD Ptam
+11/08/2021 9:40:21 : Abriendo Excel
+11/08/2021 9:40:24 : Cerrando BDD
+11/08/2021 9:40:24 : ====================================
+11/08/2021 9:40:24 : Done
+11/08/2021 9:40:27 : Cerrando programa
+11/08/2021 9:40:32 : Abriendo BDD Ptam
+11/08/2021 9:40:34 : Abriendo Excel
+11/08/2021 9:47:37 : Abriendo BDD Ptam
+11/08/2021 9:47:39 : Abriendo Excel
+11/08/2021 9:49:10 : Abriendo BDD Ptam
+11/08/2021 9:49:12 : Abriendo Excel
+11/08/2021 9:52:41 : Abriendo BDD Ptam
+11/08/2021 9:52:43 : Abriendo Excel
+11/08/2021 9:54:36 : Abriendo BDD Ptam
+11/08/2021 9:54:38 : Abriendo Excel
+11/08/2021 9:56:04 : Abriendo BDD Ptam
+11/08/2021 9:56:06 : Abriendo Excel
+11/08/2021 9:56:09 : Cerrando BDD
+11/08/2021 9:56:09 : ====================================
+11/08/2021 9:56:09 : Done
+11/08/2021 9:56:12 : Cerrando programa
+11/08/2021 9:56:26 : Abriendo BDD Ptam
+11/08/2021 9:56:28 : Abriendo Excel
+11/08/2021 10:00:11 : Abriendo BDD Ptam
+11/08/2021 10:00:13 : Abriendo Excel
+11/08/2021 10:03:49 : Abriendo BDD Ptam
+11/08/2021 10:03:51 : Abriendo Excel
+11/08/2021 10:04:23 : Abriendo BDD Ptam
+11/08/2021 10:04:26 : No hay informes para crear
+11/08/2021 10:04:29 : Cerrando programa
+11/08/2021 10:04:29 : Abriendo BDD Ptam
+11/08/2021 10:04:31 : Abriendo Excel
+11/08/2021 10:04:53 : Abriendo BDD Ptam
+11/08/2021 10:04:55 : Abriendo Excel
+11/08/2021 10:05:33 : Abriendo BDD Ptam
+11/08/2021 10:05:35 : Abriendo Excel
+11/08/2021 10:08:23 : Abriendo BDD Ptam
+11/08/2021 10:08:25 : Abriendo Excel
+11/08/2021 10:09:36 : Abriendo BDD Ptam
+11/08/2021 10:09:38 : Abriendo Excel
+11/08/2021 10:10:18 : Abriendo BDD Ptam
+11/08/2021 10:10:20 : Abriendo Excel
+11/08/2021 10:10:22 : Cerrando BDD
+11/08/2021 10:10:22 : ====================================
+11/08/2021 10:10:22 : Done
+11/08/2021 10:10:25 : Cerrando programa
+11/08/2021 10:10:37 : Abriendo BDD Ptam
+11/08/2021 10:10:39 : Abriendo Excel
+11/08/2021 10:29:53 : Abriendo BDD Ptam
+11/08/2021 10:29:55 : Abriendo Excel
+11/08/2021 10:30:46 : Abriendo BDD Ptam
+11/08/2021 10:30:48 : Abriendo Excel
+11/08/2021 10:30:50 : Cerrando BDD
+11/08/2021 10:30:50 : ====================================
+11/08/2021 10:30:50 : Done
+11/08/2021 10:30:53 : Cerrando programa
+11/08/2021 10:44:55 : Abriendo BDD Ptam
+11/08/2021 10:44:57 : Abriendo Excel
+11/08/2021 13:20:21 : Abriendo BDD Ptam
+11/08/2021 13:20:23 : Abriendo Excel
+11/08/2021 13:20:58 : Abriendo BDD Ptam
+11/08/2021 13:21:00 : Abriendo Excel
+11/08/2021 13:22:49 : Abriendo BDD Ptam
+11/08/2021 13:22:51 : Abriendo Excel
+11/08/2021 13:25:34 : Abriendo BDD Ptam
+11/08/2021 13:25:36 : Abriendo Excel
+11/08/2021 13:27:14 : Abriendo BDD Ptam
+11/08/2021 13:27:16 : Abriendo Excel
+11/08/2021 13:28:12 : Abriendo BDD Ptam
+11/08/2021 13:28:14 : Abriendo Excel
+11/08/2021 13:28:54 : Abriendo BDD Ptam
+11/08/2021 13:28:56 : Abriendo Excel
+11/08/2021 13:29:58 : Abriendo BDD Ptam
+11/08/2021 13:30:01 : Abriendo Excel
+11/08/2021 13:31:30 : Abriendo BDD Ptam
+11/08/2021 13:31:32 : Abriendo Excel
+11/08/2021 13:31:34 : Cerrando BDD
+11/08/2021 13:31:35 : ====================================
+11/08/2021 13:31:35 : Done
+11/08/2021 13:31:38 : Cerrando programa
+11/08/2021 13:33:30 : Abriendo BDD Ptam
+11/08/2021 13:33:32 : Abriendo Excel
+11/08/2021 13:34:36 : Abriendo BDD Ptam
+11/08/2021 13:34:38 : Abriendo Excel
+11/08/2021 13:35:09 : Abriendo BDD Ptam
+11/08/2021 13:35:11 : Abriendo Excel
+11/08/2021 13:35:44 : Abriendo BDD Ptam
+11/08/2021 13:35:46 : Abriendo Excel
+11/08/2021 13:35:49 : Cerrando BDD
+11/08/2021 13:35:49 : ====================================
+11/08/2021 13:35:49 : Done
+11/08/2021 13:35:52 : Cerrando programa
+11/08/2021 13:36:57 : Abriendo BDD Ptam
+11/08/2021 13:36:59 : Abriendo Excel
+11/08/2021 13:40:06 : Abriendo BDD Ptam
+11/08/2021 13:40:08 : Abriendo Excel
+11/08/2021 13:43:34 : Abriendo BDD Ptam
+11/08/2021 13:43:37 : Abriendo Excel
+11/08/2021 23:03:56 : Abriendo BDD Ptam
+11/08/2021 23:03:58 : Abriendo Excel
+11/08/2021 23:10:11 : Abriendo BDD Ptam
+11/08/2021 23:10:13 : Abriendo Excel
+11/08/2021 23:12:28 : Abriendo BDD Ptam
+11/08/2021 23:12:30 : Abriendo Excel
+12/08/2021 17:44:50 : Abriendo BDD Ptam
+12/08/2021 17:44:52 : Abriendo Excel
+12/08/2021 17:44:55 : Cerrando BDD
+12/08/2021 17:44:55 : ====================================
+12/08/2021 17:44:56 : Done
+12/08/2021 17:44:59 : Cerrando programa
+12/08/2021 17:46:42 : Abriendo BDD Ptam
+12/08/2021 17:46:44 : No hay informes para crear
+12/08/2021 17:46:47 : Cerrando programa
+12/08/2021 18:32:10 : Abriendo BDD Ptam
+12/08/2021 18:32:12 : Abriendo Excel
+12/08/2021 18:32:15 : Cerrando BDD
+12/08/2021 18:32:15 : ====================================
+12/08/2021 18:32:15 : Done
+12/08/2021 18:32:18 : Cerrando programa
+12/08/2021 18:33:23 : Abriendo BDD Ptam
+12/08/2021 18:33:25 : No hay informes para crear
+12/08/2021 18:33:28 : Cerrando programa
+12/08/2021 18:33:32 : Abriendo BDD Ptam
+12/08/2021 18:33:34 : Abriendo Excel
+12/08/2021 18:33:37 : Cerrando BDD
+12/08/2021 18:33:37 : ====================================
+12/08/2021 18:33:37 : Done
+12/08/2021 18:33:40 : Cerrando programa
+12/08/2021 18:47:27 : Abriendo BDD Ptam
+12/08/2021 18:47:29 : Abriendo Excel
+12/08/2021 18:47:32 : Cerrando BDD
+12/08/2021 18:47:32 : ====================================
+12/08/2021 18:47:32 : Done
+12/08/2021 18:47:35 : Cerrando programa

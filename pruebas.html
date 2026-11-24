@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<table id="tabla_analizadores" class="table table-striped table-bordered table-hover" width="100%" border="1">
+    <thead>
+    <tr>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;"></th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Tag</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Línea</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Tipo<br>Analizador</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Descripción</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Marca</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Modelo</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Extractivo</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Rango</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Unidad</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Incertidumbre</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Func.<br>Calibración</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Señal<br>salida</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Control<br>emisiones</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Tag señal<br>control</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Corrección<br>humedad</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Corrección<br>Oxígeno</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Límite<br>alarma DCS</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Límite<br>emisión</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Límite<br>legal diario</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Fecha<br>instalacion</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Fecha<br>U.Revisión</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Estado</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Observaciones</th>
+        <th style="white-space: nowrap; text-align: center; max-width: 100px;">Componentes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><span class="ver_analizador btn btn-xs btn-primary"><i class="fa fa-eye"></i></span>
+            <button class="editar_analizador btn btn-xs btn-success"><i class="fa fa-edit"></i></button>
+            <button class="borrar_analizador btn btn-xs btn-danger"><i class="fa fa-times"></i></button>
+        </td>
+        <td rel-campo="id_analizadores" style=" text-align: ; white-space: nowrap;">1</td>
+        <td rel-campo="tag" style=" text-align: ; white-space: nowrap;">1234</td>
+        <td rel-campo="linea" style=" text-align: ; white-space: nowrap;">L1</td>
+        <td rel-campo="tipo_analizador" style=" text-align: ; white-space: nowrap;">PRINCIPAL</td>
+        <td rel-campo="descripcion" style=" text-align: ; white-space: nowrap;">Analizador 1</td>
+        <td rel-campo="marca" style=" text-align: ; white-space: nowrap;">SIEMENS</td>
+        <td rel-campo="modelo" style=" text-align: ; white-space: nowrap;">K5</td>
+        <td rel-campo="extractivo" style=" text-align: right; white-space: nowrap;">Si</td>
+        <td rel-campo="rango_medida" style=" text-align: right; white-space: nowrap;">5-25mA</td>
+        <td rel-campo="unidad" style=" text-align: ; white-space: nowrap;">mA</td>
+        <td rel-campo="incertidumbre_equipo" style=" text-align: right; white-space: nowrap;">0%</td>
+        <td rel-campo="func_calibracion" style=" text-align: right; white-space: nowrap;">0</td>
+        <td rel-campo="senyal_salida" style=" text-align: right; white-space: nowrap;">1</td>
+        <td rel-campo="control_emisiones" style=" text-align: ; white-space: nowrap;">Si</td>
+        <td rel-campo="tag_senyal_de_control" style=" text-align: ; white-space: nowrap;">2</td>
+        <td rel-campo="correccion_humedad" style=" text-align: right; white-space: nowrap;">No</td>
+        <td rel-campo="correccion_oxigeno" style=" text-align: right; white-space: nowrap;">Si</td>
+        <td rel-campo="limite_alarma_dcs" style=" text-align: right; white-space: nowrap;">4</td>
+        <td rel-campo="valor_limite_emision" style=" text-align: right; white-space: nowrap;">5</td>
+        <td rel-campo="limite_legal_diario" style=" text-align: right; white-space: nowrap;">6</td>
+        <td rel-campo="fecha_instalacion" style=" text-align: right; white-space: nowrap;">25/06/2019</td>
+        <td rel-campo="fecha_ult_revision" style=" text-align: right; white-space: nowrap;">02/06/2019</td>
+        <td rel-campo="estado" style=" text-align: ; white-space: nowrap;">AVERIADO</td>
+        <td rel-campo="observaciones" style=" text-align: ; white-space: nowrap;">Observaciones de 1</td>
+        <td rel-campo="componentes" style=" text-align: left; white-space: nowrap;">C3H8,NH3</td>
+    </tr>
+    <tr>
+        <td><span class="ver_analizador btn btn-xs btn-primary"><i class="fa fa-eye"></i></span>
+            <button class="editar_analizador btn btn-xs btn-success"><i class="fa fa-edit"></i></button>
+            <button class="borrar_analizador btn btn-xs btn-danger"><i class="fa fa-times"></i></button>
+        </td>
+        <td rel-campo="id_analizadores" style=" text-align: ; white-space: nowrap;">2</td>
+        <td rel-campo="tag" style=" text-align: ; white-space: nowrap;">1234</td>
+        <td rel-campo="linea" style=" text-align: ; white-space: nowrap;">L1</td>
+        <td rel-campo="tipo_analizador" style=" text-align: ; white-space: nowrap;">PRINCIPAL</td>
+        <td rel-campo="descripcion" style=" text-align: ; white-space: nowrap;">Analizador 2</td>
+        <td rel-campo="marca" style=" text-align: ; white-space: nowrap;">Panasonic</td>
+        <td rel-campo="modelo" style=" text-align: ; white-space: nowrap;">Modelo</td>
+        <td rel-campo="extractivo" style=" text-align: right; white-space: nowrap;">No</td>
+        <td rel-campo="rango_medida" style=" text-align: right; white-space: nowrap;">5-20mA</td>
+        <td rel-campo="unidad" style=" text-align: ; white-space: nowrap;">mA</td>
+        <td rel-campo="incertidumbre_equipo" style=" text-align: right; white-space: nowrap;">2%</td>
+        <td rel-campo="func_calibracion" style=" text-align: right; white-space: nowrap;">10</td>
+        <td rel-campo="senyal_salida" style=" text-align: right; white-space: nowrap;">20</td>
+        <td rel-campo="control_emisiones" style=" text-align: ; white-space: nowrap;">Si</td>
+        <td rel-campo="tag_senyal_de_control" style=" text-align: ; white-space: nowrap;">1</td>
+        <td rel-campo="correccion_humedad" style=" text-align: right; white-space: nowrap;">No</td>
+        <td rel-campo="correccion_oxigeno" style=" text-align: right; white-space: nowrap;">Si</td>
+        <td rel-campo="limite_alarma_dcs" style=" text-align: right; white-space: nowrap;">30</td>
+        <td rel-campo="valor_limite_emision" style=" text-align: right; white-space: nowrap;">40</td>
+        <td rel-campo="limite_legal_diario" style=" text-align: right; white-space: nowrap;">50</td>
+        <td rel-campo="fecha_instalacion" style=" text-align: right; white-space: nowrap;">30/06/2019</td>
+        <td rel-campo="fecha_ult_revision" style=" text-align: right; white-space: nowrap;">01/06/2019</td>
+        <td rel-campo="estado" style=" text-align: ; white-space: nowrap;">OPERATIVO</td>
+        <td rel-campo="observaciones" style=" text-align: ; white-space: nowrap;">Observaciones de 2</td>
+        <td rel-campo="componentes" style=" text-align: left; white-space: nowrap;">C3H8,HCL,NH3,NO2,NOX,SO2</td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

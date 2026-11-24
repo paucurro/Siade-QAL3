@@ -1,123 +1,86 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'e605422a569497e039dc17687820f7c303866625',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
     ),
-    'reference' => NULL,
-    'name' => '__root__',
-  ),
-  'versions' => 
-  array (
-    '__root__' => 
-    array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => NULL,
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'e605422a569497e039dc17687820f7c303866625',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'composer/pcre' => array(
+            'pretty_version' => '3.4.0',
+            'version' => '3.4.0.0',
+            'reference' => 'd5a341b3fb61f3001970940afb1d332968a183ed',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/./pcre',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'ezyang/htmlpurifier' => array(
+            'pretty_version' => 'v4.19.1',
+            'version' => '4.19.1.0',
+            'reference' => '5e0539132d934f936fbae2c88b55d58f9438623f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../ezyang/htmlpurifier',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'maennchen/zipstream-php' => array(
+            'pretty_version' => '3.2.2',
+            'version' => '3.2.2.0',
+            'reference' => '77bebeb4c6c340bb3c11c843b2cffd8bbfde4d5e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../maennchen/zipstream-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'markbaker/complex' => array(
+            'pretty_version' => '3.0.2',
+            'version' => '3.0.2.0',
+            'reference' => '95c56caa1cf5c766ad6d65b6344b807c1e8405b9',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../markbaker/complex',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'markbaker/matrix' => array(
+            'pretty_version' => '3.0.1',
+            'version' => '3.0.1.0',
+            'reference' => '728434227fe21be27ff6d86621a1b13107a2562c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../markbaker/matrix',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'phpoffice/phpspreadsheet' => array(
+            'pretty_version' => '1.30.9',
+            'version' => '1.30.9.0',
+            'reference' => '8046fafd702b3a5b92f6e2adcee9c30d6426ea65',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../phpoffice/phpspreadsheet',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'psr/simple-cache' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'reference' => '764e0b3939f5ca87cb904f570ef9be2d78a07865',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/simple-cache',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
-    'ezyang/htmlpurifier' => 
-    array (
-      'pretty_version' => 'v4.13.0',
-      'version' => '4.13.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '08e27c97e4c6ed02f37c5b2b20488046c8d90d75',
-    ),
-    'maennchen/zipstream-php' => 
-    array (
-      'pretty_version' => '2.1.0',
-      'version' => '2.1.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'c4c5803cc1f93df3d2448478ef79394a5981cc58',
-    ),
-    'markbaker/complex' => 
-    array (
-      'pretty_version' => '2.0.3',
-      'version' => '2.0.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6f724d7e04606fd8adaa4e3bb381c3e9db09c946',
-    ),
-    'markbaker/matrix' => 
-    array (
-      'pretty_version' => '2.1.3',
-      'version' => '2.1.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '174395a901b5ba0925f1d790fa91bab531074b61',
-    ),
-    'myclabs/php-enum' => 
-    array (
-      'pretty_version' => '1.8.3',
-      'version' => '1.8.3.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'b942d263c641ddb5190929ff840c68f78713e937',
-    ),
-    'phpoffice/phpspreadsheet' => 
-    array (
-      'pretty_version' => '1.18.0',
-      'version' => '1.18.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '418cd304e8e6b417ea79c3b29126a25dc4b1170c',
-    ),
-    'psr/http-client' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
-    ),
-    'psr/http-factory' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
-    ),
-    'psr/http-message' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
-    ),
-    'psr/simple-cache' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
-    ),
-    'symfony/polyfill-mbstring' => 
-    array (
-      'pretty_version' => 'v1.23.1',
-      'version' => '1.23.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '9174a3d80210dca8daa7f31fec659150bbeabfc6',
-    ),
-  ),
 );

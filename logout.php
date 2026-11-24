@@ -7,7 +7,9 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-$_SESSION['datos_usuario_qal3']->row_usuarios = null;
+if (isset($_SESSION['datos_usuario_qal3'])) {
+    $_SESSION['datos_usuario_qal3']->row_usuarios = null;
+}
 unset($_SESSION['datos_usuario_qal3']);
 
 session_destroy();

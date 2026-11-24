@@ -81,52 +81,53 @@ function setSqlDB($sql)
 }
 
 
-/**
- * @param $nombre_recurso
- * @return bool
- */
-function control_recurso($nombre_recurso)
-{
-    global $contadores_app, $database_contadores_app;
-
-    // Aqui tenemos que comprobar si el usuario tiene acceso al recurso
-    $devuelto = false;
-
-    if ($nombre_recurso != "") {
-        if ($_SESSION['datos_usuario_qal3']->row_usuarios['usuario_usuarios'] != 'pau_curro') {
-            if (is_array($nombre_recurso))
-                $valores = $nombre_recurso;
-            else
-                $valores = array($nombre_recurso);
-
-            if (count($valores) > 0) {
-                $filtro = "";
-                foreach ($valores as $index => $valor) {
-                    if ($index == 0)
-                        $filtro .= " AND (recursos.titulo_recursos = '" . $valor . "'";
-                    else
-                        $filtro .= " OR recursos.titulo_recursos = '" . $valor . "'";
-                }
-                if ($filtro != "") $filtro .= ")";
-
-                mysqli_select_db($contadores_app, $database_contadores_app);
-                $query_datos = "SELECT * FROM explotacion.recursos "
-                    . "LEFT JOIN explotacion.usuarios_recursos ON usuarios_recursos.fk_recursos = recursos.id_recursos "
-                    . "LEFT JOIN explotacion.usuarios ON usuarios.id = usuarios_recursos.usuarios_id "
-                    . "WHERE usuarios.id = '" . $usuario_seleccionado . "' " . $filtro;
-                $datos = mysqli_query($contadores_app, $query_datos) or die(mysqli_error($contadores_app));
-                $totalRows_datos = mysqli_num_rows($datos);
-
-                if ($totalRows_datos > 0) $devuelto = true;
-
-                mysqli_free_result($datos);
-            }
-        } else {
-            $devuelto = true;
-        }
-    }
-    return $devuelto;
-}
+// NO SE USA: depende de $contadores_app y $usuario_seleccionado, que no existen en este proyecto.
+// /**
+//  * @param $nombre_recurso
+//  * @return bool
+//  */
+// function control_recurso($nombre_recurso)
+// {
+//     global $contadores_app, $database_contadores_app;
+//
+//     // Aqui tenemos que comprobar si el usuario tiene acceso al recurso
+//     $devuelto = false;
+//
+//     if ($nombre_recurso != "") {
+//         if ($_SESSION['datos_usuario_qal3']->row_usuarios['usuario_usuarios'] != 'pau_curro') {
+//             if (is_array($nombre_recurso))
+//                 $valores = $nombre_recurso;
+//             else
+//                 $valores = array($nombre_recurso);
+//
+//             if (count($valores) > 0) {
+//                 $filtro = "";
+//                 foreach ($valores as $index => $valor) {
+//                     if ($index == 0)
+//                         $filtro .= " AND (recursos.titulo_recursos = '" . $valor . "'";
+//                     else
+//                         $filtro .= " OR recursos.titulo_recursos = '" . $valor . "'";
+//                 }
+//                 if ($filtro != "") $filtro .= ")";
+//
+//                 mysqli_select_db($contadores_app, $database_contadores_app);
+//                 $query_datos = "SELECT * FROM explotacion.recursos "
+//                     . "LEFT JOIN explotacion.usuarios_recursos ON usuarios_recursos.fk_recursos = recursos.id_recursos "
+//                     . "LEFT JOIN explotacion.usuarios ON usuarios.id = usuarios_recursos.usuarios_id "
+//                     . "WHERE usuarios.id = '" . $usuario_seleccionado . "' " . $filtro;
+//                 $datos = mysqli_query($contadores_app, $query_datos) or die(mysqli_error($contadores_app));
+//                 $totalRows_datos = mysqli_num_rows($datos);
+//
+//                 if ($totalRows_datos > 0) $devuelto = true;
+//
+//                 mysqli_free_result($datos);
+//             }
+//         } else {
+//             $devuelto = true;
+//         }
+//     }
+//     return $devuelto;
+// }
 
 function pon_seleccionado($opcion, $texto, $comando = 'active', $parametros = [], $guarda = true)
 {
@@ -680,7 +681,7 @@ function invierte_fecha_hora_string($fecha, $hora)
     $valores_fecha = explode("/", $fecha);
     $valores_hora = explode(":", $hora);
     // Devolvemos AAAA-mm-dd
-    return date("Y-m-d H:m:s", mktime($valores_hora[0], $valores_hora[1], 0, $valores_fecha[1], $valores_fecha[0], $valores_fecha[2]));
+    return date("Y-m-d H:i:s", mktime($valores_hora[0], $valores_hora[1], 0, $valores_fecha[1], $valores_fecha[0], $valores_fecha[2]));
 }
 
 // **********************************************************************************************************************************
@@ -689,48 +690,18 @@ function invierte_fecha_hora_string($fecha, $hora)
 
 function limpiar_acentos($s)
 {
-    $s = strtolower($s);
+    $s = mb_strtolower((string)$s, 'UTF-8');
 
-    $vars = array("á", "ŕ", "â", "ă", "Ş");
-    $s = str_replace($vars, "a", $s);
-
-    $vars = array("Á", "Ŕ", "Â", "Ă");
-    $s = str_replace($vars, "A", $s);
-
-    $vars = array("Í", "Ě", "Î");
-    $s = str_replace($vars, "I", $s);
-
-    $vars = array("í", "ě", "î");
-    $s = str_replace($vars, "i", $s);
-
-    $vars = array("é", "č", "ę");
-    $s = str_replace($vars, "e", $s);
-
-    $vars = array("É", "Č", "Ę");
-    $s = str_replace($vars, "E", $s);
-
-    $vars = array("&oacute;", "ň", "ô", "ő", "ş");
-    $s = str_replace($vars, "o", $s);
-
-    $vars = array("&oacute;", "Ň", "Ô", "Ő");
-    $s = str_replace($vars, "O", $s);
-
-    $vars = array("ú", "ů", "ű");
-    $s = str_replace($vars, "u", $s);
-
-    $vars = array("Ú", "Ů", "Ű");
-    $s = str_replace($vars, "U", $s);
-
-    $s = str_replace("", "e", $s);
-    $s = str_replace("ç", "c", $s);
-    $s = str_replace("Ç", "C", $s);
-    $s = str_replace("ń", "n", $s);
-    $s = str_replace("Ń", "N", $s);
-    $s = str_replace(",", "", $s);
-    $s = str_replace("ş", "", $s);
-    $s = str_replace("Ş", "", $s);
-    $s = str_replace(" ", "", $s);
-    $s = str_replace("-", "_", $s);
+    $s = strtr($s, [
+        'á' => 'a', 'à' => 'a', 'â' => 'a', 'ä' => 'a', 'ã' => 'a', 'å' => 'a',
+        'é' => 'e', 'è' => 'e', 'ê' => 'e', 'ë' => 'e',
+        'í' => 'i', 'ì' => 'i', 'î' => 'i', 'ï' => 'i',
+        'ó' => 'o', 'ò' => 'o', 'ô' => 'o', 'ö' => 'o', 'õ' => 'o',
+        'ú' => 'u', 'ù' => 'u', 'û' => 'u', 'ü' => 'u',
+        'ç' => 'c', 'ñ' => 'n',
+        'ª' => '', 'º' => '',
+        ',' => '', ' ' => '', '-' => '_',
+    ]);
 
     return $s;
 }
@@ -920,7 +891,7 @@ function envia_imagen_id($directorio, $nombreorigen, $nombretemporal, $tipofiche
             else
                 $nombrefinal_g = "Error subiendo imagen";
         }
-        if (cual <> 2) {
+        if ($cual <> 2) {
             if (redimensionar_jpeg($nombrefinal, $directorio . '/peque/' . $nombreorigen, $tam_p, $tam_p, $tipo, $solo_anchura) == TRUE)
                 $nombrefinal_p = $directorio . '/peque/' . $nombreorigen;
             else
@@ -971,10 +942,10 @@ function envia_documento($directorio, $nombreorigen, $nombretemporal, $id_foto)
 function hyperlink($text)
 {
     // si coindice protocolo://direccion/ruta/
-    $text = ereg_replace("[a-zA-Z]+://([.]?[a-zA-Z0-9_/-])*", "<a href=\"\0\">\0</a>", $text);
+    $text = preg_replace('~[a-zA-Z]+://(?:[.]?[a-zA-Z0-9_/-])*~', '<a href="$0">$0</a>', $text);
 
     // si coincide www.something
-    $text = ereg_replace("(^| )(www([.]?[a-zA-Z0-9_/-])*)", "\1<a href=\"http://\2\">\2</a>", $text);
+    $text = preg_replace('~(^| )(www(?:[.]?[a-zA-Z0-9_/-])*)~', '$1<a href="http://$2">$2</a>', $text);
 
     return $text;
 }
@@ -1006,13 +977,14 @@ function filedata($path)
     // Extraemos la extensi&oacute;n, un s&oacute;lo paso
     $data["ext"] = substr(strrchr($path, "."), 1);
     // Primer paso de lectura de ruta
-    $data["path"] = array_shift(explode("." . $data["ext"], $path));
+    $data["path"] = explode("." . $data["ext"], $path)[0];
     // Primer paso de lectura de nombre
-    $data["name"] = array_pop(explode("/", $data["path"]));
+    $partes_path = explode("/", $data["path"]);
+    $data["name"] = array_pop($partes_path);
     // Ajustamos nombre a FALSE si está vacio
     $data["name"] = ($data["name"] ? $data["name"] : FALSE);
     // Ajustamos la ruta a FALSE si está vacia
-    $data["path"] = ($data["exists"] ? ($data["name"] ? realpath(array_shift(explode($data["name"], $data["path"]))) : realpath(array_shift(explode($data["ext"], $data["path"])))) : ($data["name"] ? array_shift(explode($data["name"], $data["path"])) : ($data["ext"] ? array_shift(explode($data["ext"], $data["path"])) : rtrim($data["path"], "/"))));
+    $data["path"] = ($data["exists"] ? ($data["name"] ? realpath(explode($data["name"], $data["path"])[0]) : realpath(explode($data["ext"], $data["path"])[0])) : ($data["name"] ? explode($data["name"], $data["path"])[0] : ($data["ext"] ? explode($data["ext"], $data["path"])[0] : rtrim($data["path"], "/"))));
     // Ajustamos el nombre a FALSE si está vacio o a su valor en caso contrario
     $data["filename"] = (($data["name"] or $data["ext"]) ? $data["name"] . ($data["ext"] ? "." : "") . $data["ext"] : FALSE);
     // Devolvemos los resultados
@@ -1382,7 +1354,8 @@ function pon_selected($valor, $campo, $array = [])
 function convierte_numero($valor, $pon_cero = true)
 {
     if ($valor == '') $valor = 0;
-    $valor = str_replace(",", ".", $valor) * 1;
+    $valor = str_replace(",", ".", $valor);
+    $valor = is_numeric($valor) ? $valor * 1 : 0;
     return (($pon_cero) && ($valor == '') ? 0 : $valor);
 }
 

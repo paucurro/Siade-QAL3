@@ -10,6 +10,8 @@ $hostname_qal3_db = "localhost";
 $database_qal3_db = "qal3_db";
 $username_qal3_db = "qal3_user";
 $password_qal3_db = "Siade2018";
+// PHP >= 8.1 lanza excepciones en mysqli por defecto; mantenemos el comportamiento clasico (false + mysqli_error)
+mysqli_report(MYSQLI_REPORT_OFF);
 $qal3_db = mysqli_connect($hostname_qal3_db, $username_qal3_db, $password_qal3_db) or die ('sql error:' . mysqli_connect_error());
 
 mysqli_set_charset($qal3_db, "utf8");
@@ -19,11 +21,7 @@ if (!function_exists("GetSQLValueString")) {
     function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
     {
         global $qal3_db;
-        if (PHP_VERSION < 6) {
-            $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
-        }
-
-        $theValue = function_exists("mysqli_real_escape_string") ? mysqli_real_escape_string($qal3_db, $theValue) : mysqli_escape_string($qal3_db, $theValue);
+        $theValue = mysqli_real_escape_string($qal3_db, (string)$theValue);
 
         switch ($theType) {
             case "text":
